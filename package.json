@@ -1,0 +1,29 @@
+{
+  "name": "handerrors",
+  "version": "1.0.0",
+  "description": "get errors from back-end for validate form",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamalroger/back-errors.git"
+  },
+  "keywords": [
+    "validation",
+    "laravel",
+    "django",
+    "vuejs",
+    "angular",
+    "react",
+    "javascript",
+    "errors"
+  ],
+  "author": "BELHARRADI JAMAL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamalroger/back-errors/issues"
+  },
+  "homepage": "https://github.com/jamalroger/back-errors#readme"
+}
