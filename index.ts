@@ -5,12 +5,20 @@ export interface Errors {
 export interface NewErrors {
     [error: string]: {
         errors: any,
-        hasError: boolean
+        hasErrors: boolean,
+        remove: Function
     };
 }
 export interface Error {
     errors: any,
-    hasError: boolean
+    hasErrors: boolean,
+    remove: Function
+}
+
+
+export default function handErrors(errros: Errors = {}) {
+
+    return new HandErrors(errros);
 }
 
 export class HandErrors {
@@ -40,17 +48,21 @@ export class HandErrors {
         if (!this.hasErrors(field))
             return null;
 
+
         return this.errors[field];
+    }
+    removErrors(field) {
+        this.errors[field] = null;
     }
 
     error(field): Error {
         return {
-            hasError: this.hasErrors(field),
-            errors: this.getErrors(field)
+            hasErrors: this.hasErrors(field),
+            errors: this.getErrors(field),
+            remove: () => { this.newErrors[field].hasErrors = false; this.newErrors[field].errors = []; }
         }
     }
-    controls(): NewErrors {
-
+    get controls(): NewErrors {
         return this.newErrors;
     }
 

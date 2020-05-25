@@ -1,6 +1,11 @@
 "use strict";
 exports.__esModule = true;
 exports.HandErrors = void 0;
+function handErrors(errros) {
+    if (errros === void 0) { errros = {}; }
+    return new HandErrors(errros);
+}
+exports["default"] = handErrors;
 var HandErrors = /** @class */ (function () {
     function HandErrors(errros) {
         if (errros === void 0) { errros = {}; }
@@ -22,10 +27,15 @@ var HandErrors = /** @class */ (function () {
             return null;
         return this.errors[field];
     };
+    HandErrors.prototype.removErrors = function (field) {
+        this.errors[field] = null;
+    };
     HandErrors.prototype.error = function (field) {
+        var _this = this;
         return {
-            hasError: this.hasErrors(field),
-            errors: this.getErrors(field)
+            hasErrors: this.hasErrors(field),
+            errors: this.getErrors(field),
+            remove: function () { _this.newErrors[field].hasErrors = false; _this.newErrors[field].errors = []; }
         };
     };
     Object.defineProperty(HandErrors.prototype, "controls", {

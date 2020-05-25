@@ -12,6 +12,12 @@ err.setErrors({
         'must e string',
     ]
 });
-console.log(err.controls.name.hasError);
+console.log(err.controls.name.hasErrors);
+console.log("---------------");
+console.log(err.controls.name.errors);
+console.log("---------------");
+console.log(err.controls.name.remove());
+console.log("---------------");
+console.log(err.controls.name.hasErrors);
 console.log("---------------");
 console.log(err.controls.name.errors);
