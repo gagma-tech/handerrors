@@ -20,11 +20,11 @@ you have to hand this errors in check if filed hasErrors or not and return error
 
 ```
 # Install
-
+```
 `npm install handerrors --save-dev`
     or use cdn
  <script src="https://unpkg.com/handerrors"></script>
- ``
+ ```
 ## methods api
 
 - handErrors(errors={}) // helpers return a object HandErrors
