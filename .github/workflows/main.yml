@@ -25,9 +25,9 @@ jobs:
       run:   npm install
       
     - name:    build from ts to js
-      run:   npm  build
+      run:   npm run build
       
     - name:    testng using jest
-      run:   npm   test
+      run:   npm  run test
 
 
