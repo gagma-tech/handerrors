@@ -4,7 +4,7 @@
   "description": "get errors from back-end for validate form",
   "main": "build/index.js",
   "scripts": {
-    "build": "ts",
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
