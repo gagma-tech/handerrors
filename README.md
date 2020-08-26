@@ -21,9 +21,9 @@ you have to hand this errors in check if filed hasErrors or not and return error
 ```
 # Install
 ```
-`npm install handerrors --save-dev`
+`npm install laravel-handerrors --save-dev`
     or use cdn
- <script src="https://unpkg.com/handerrors"></script>
+ <script src="https://unpkg.com/laravel-handerrors"></script>
  ```
 ## methods api
 
