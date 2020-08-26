@@ -1,6 +1,6 @@
 {
-  "name": "handerrors",
-  "version": "1.1.0",
+  "name": "laravel-handerrors",
+  "version": "1.0.0",
   "description": "get errors from back-end for validate form",
   "main": "build/index.js",
   "scripts": {
@@ -21,6 +21,9 @@
     "javascript",
     "errors"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "BELHARRADI JAMAL",
   "license": "MIT",
   "bugs": {
