@@ -21,7 +21,7 @@ you have to hand this errors in check if filed hasErrors or not and return error
 ```
 # Install
 ```
-`npm install laravel-handerrors --save-dev`
+`npm install laravel-handerrors`
     or use cdn
  <script src="https://unpkg.com/laravel-handerrors"></script>
  ```
